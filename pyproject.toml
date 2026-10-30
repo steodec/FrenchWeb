@@ -3,6 +3,8 @@ name = "navigateur"
 version = "0.0.1"
 description = "Navigateur web léger basé sur Qt WebEngine : moins de RAM et de CPU que Chrome ou Edge."
 readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
 requires-python = ">=3.12"
 dependencies = [
     "adblock",
