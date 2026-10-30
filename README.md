@@ -42,8 +42,12 @@ uv run python -m navigateur   # lancer le navigateur
 ```bash
 uv run pytest                                  # tests + couverture (minimum 80 %)
 uv run ruff check . && uv run ruff format .    # lint + format
-uv run mypy src tests                          # typage
+uv run mypy src tests tools                    # typage
+uv run python tools/check_media.py             # codecs et Widevine disponibles
 ```
+
+Les résultats de la vérification des codecs et leurs conséquences sont dans
+[docs/codecs.md](docs/codecs.md).
 
 Ces vérifications sont exécutées automatiquement par la CI sur Windows, macOS et Linux, pour
 chaque push sur `main` et chaque pull request.
