@@ -1,6 +1,7 @@
 # FrenchWeb
 
 [![CI](https://github.com/steodec/FrenchWeb/actions/workflows/ci.yml/badge.svg)](https://github.com/steodec/FrenchWeb/actions/workflows/ci.yml)
+[![Couverture](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/steodec/FrenchWeb/python-coverage-comment-action-data/endpoint.json)](https://htmlpreview.github.io/?https://github.com/steodec/FrenchWeb/blob/python-coverage-comment-action-data/htmlcov/index.html)
 [![Python](https://img.shields.io/badge/python-3.12%20%7C%203.13-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Qt WebEngine](https://img.shields.io/badge/Qt%20WebEngine-PySide6-41cd52?logo=qt&logoColor=white)](https://doc.qt.io/qtforpython-6/)
 [![Plateformes](https://img.shields.io/badge/plateformes-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#démarrer)
@@ -39,7 +40,7 @@ uv run python -m navigateur   # lancer le navigateur
 ## Développement
 
 ```bash
-uv run pytest                                  # tests
+uv run pytest                                  # tests + couverture (minimum 80 %)
 uv run ruff check . && uv run ruff format .    # lint + format
 uv run mypy src tests                          # typage
 ```

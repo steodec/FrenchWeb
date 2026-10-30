@@ -17,6 +17,7 @@ navigateur = "navigateur.__main__:main"
 dev = [
     "mypy",
     "pytest",
+    "pytest-cov",
     "pytest-qt",
     "ruff",
 ]
@@ -42,3 +43,15 @@ mypy_path = "src"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# La couverture est mesurée à chaque lancement des tests, en local comme en CI.
+addopts = "--cov=navigateur --cov-report=term-missing"
+
+[tool.coverage.run]
+branch = true
+# Chemins relatifs : nécessaires pour générer le badge en CI.
+relative_files = true
+
+[tool.coverage.report]
+# Seuil minimal : les tests échouent en dessous de 80 % de couverture.
+fail_under = 80
+exclude_also = ['if __name__ == "__main__":']
