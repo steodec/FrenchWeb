@@ -1,0 +1,12 @@
+# Jeu fixe de sites pour les mesures RAM/CPU (un par ligne, ouverts chacun dans un onglet).
+# Sites publics, sans connexion, représentatifs d'usages courants.
+# Ne pas modifier sans refaire les mesures de référence : les résultats ne seraient plus comparables.
+
+https://fr.wikipedia.org/wiki/Navigateur_web
+https://www.youtube.com/
+https://www.lemonde.fr/
+https://github.com/
+https://www.reddit.com/r/france/
+https://www.amazon.fr/
+https://stackoverflow.com/questions
+https://www.bbc.com/news
