@@ -7,6 +7,9 @@ AGENTS.md
 
 .venv
 
+# Configuration d'IDE (JetBrains), propre à chaque poste
+.idea/
+
 # Python
 __pycache__/
 *.py[cod]
