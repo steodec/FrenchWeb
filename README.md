@@ -8,6 +8,7 @@
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![mypy](https://img.shields.io/badge/mypy-strict-2a6db2)](https://mypy-lang.org/)
+[![Licence : GPL v3](https://img.shields.io/badge/licence-GPLv3-blue)](LICENSE)
 
 Navigateur web multiplateforme (Windows, macOS, Linux), open source et gratuit, qui affiche
 **tous les sites correctement** en consommant **nettement moins de RAM et de CPU** que Chrome
@@ -58,4 +59,9 @@ chaque push sur `main` et chaque pull request.
 
 ## Licence
 
-À définir (phase 0).
+Distribué sous licence [GNU GPL v3 ou ultérieure](LICENSE) : vous pouvez utiliser, modifier et
+redistribuer ce logiciel, à condition que toute version redistribuée reste sous la même licence,
+avec son code source.
+
+Qt et PySide6 sont utilisés sous licence LGPL v3 ; Chromium (via Qt WebEngine) reste sous ses
+propres licences.
