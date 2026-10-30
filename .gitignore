@@ -1,0 +1,17 @@
+# SI VOUS UTILISEZ L'IA NE POLUER PAS AVEC VOS CONFIG
+
+CLAUDE.md
+AGENTS.md
+
+
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+build/
+dist/
+*.spec
