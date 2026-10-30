@@ -20,6 +20,7 @@ dev = [
     "pytest-cov",
     "pytest-qt",
     "ruff",
+    "types-psutil",
 ]
 
 [build-system]
@@ -39,10 +40,12 @@ select = ["E", "F", "W", "I", "B", "UP", "SIM"]
 [tool.mypy]
 python_version = "3.12"
 strict = true
-mypy_path = "src"
+# benchmarks/ : le script de mesure est importé par ses tests.
+mypy_path = "src:benchmarks"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["benchmarks"]
 # La couverture est mesurée à chaque lancement des tests, en local comme en CI.
 addopts = "--cov=navigateur --cov-report=term-missing"
 

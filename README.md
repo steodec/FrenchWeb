@@ -48,6 +48,17 @@ uv run mypy src tests                          # typage
 Ces vérifications sont exécutées automatiquement par la CI sur Windows, macOS et Linux, pour
 chaque push sur `main` et chaque pull request.
 
+## Mesures
+
+La consommation RAM/CPU est comparée à Chrome et Edge avec un protocole fixe (jeu de sites,
+profil vierge, médiane de plusieurs passes) :
+
+```bash
+uv run python benchmarks/run_benchmark.py
+```
+
+Détails du protocole et des indicateurs : [benchmarks/README.md](benchmarks/README.md).
+
 ## Feuille de route
 
 0. Préparation : environnement, vérification codecs/Widevine, licence, protocole de mesure
